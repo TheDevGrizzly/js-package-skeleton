@@ -1,0 +1,36 @@
+{
+    "name": ":vendor_name/:package_name",
+    "version": "1.0.0",
+    "description": ":package_description",
+    "author": {
+        "name": ":author_name",
+        "email": ":author_email"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/:vendor_name/:package_name.git"
+    },
+    "homepage": "https://github.com/:vendor_name/:package_name#readme",
+    "bugs": {
+        "url": "https://github.com/:vendor_name/:package_name/issues",
+        "email": "project@hostname.com"
+    },
+    "main": ".src/app.js",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "alpinejs": "^2.8.0",
+        "jest": "^26.6.3",
+        "laravel-mix": "^6.0.10",
+        "tailwindcss": "^2.0.2"
+    }
+}
